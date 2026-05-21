@@ -5,7 +5,7 @@ import ballerina/log;
     label: "myauto"
 }
 service / on new http:Listener(9090) {
-    resource function get greeting() returns string {
+    resource function get orders() returns string {
         log:printInfo("Hello, World!");
         return "Hello, World!";
     }
